@@ -33,4 +33,19 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5.1</version>
+                <configuration>
+                    <allowSnapshots>false</allowSnapshots>
+                    <noDeploy>true</noDeploy>
+                    <noReleaseBuild>true</noReleaseBuild>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
